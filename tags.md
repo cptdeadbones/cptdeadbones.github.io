@@ -57,11 +57,11 @@ title: Tags
             $('.tag_posts').empty().append($('<div class="tag_title">' + tagContent + '</div>')).append($ul).slideDown('normal');
         });
     }
-    
+
     if (location.hash != '') {
         showPosts(location.hash.substring(1));
     }
-    
+
     function draw(words) {
         d3.select('.cloud g')
             .attr('transform', 'translate(' + [width / 2, height / 2] + ')')
@@ -97,7 +97,7 @@ title: Tags
                 showPosts(d.text);
             });
     }
-    
+
     var layout = d3.layout.cloud()
         .size([width, height])
         .words(tags.map(function(d) {
@@ -118,7 +118,7 @@ title: Tags
             return d.size;
         })
         .on('end', draw);
-        
+
     layout.start();
-    
+
 </script>
