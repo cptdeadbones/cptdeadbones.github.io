@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Archives"
+title: "归档：Archives"
 ---
 <ul class="list-unstyled">
      {% for post in site.posts limit:100 %} 
@@ -12,4 +12,4 @@ title: "Archives"
 	{% endunless %} 
     <li><h4><span>{{ post.date | date:"%Y-%m-%d" }}</span>&raquo;<a href="{{ post.url }}">{{ post.title }}</a></h4></li> 
 	{% endfor %} 
-</ul>
+</ul> 

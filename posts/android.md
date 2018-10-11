@@ -1,4 +1,4 @@
 ---
 layout: category
-category: random-rants
+category: android
 ---
