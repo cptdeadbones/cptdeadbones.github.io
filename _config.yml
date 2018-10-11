@@ -36,8 +36,6 @@ name: Captain DeadBones
 url: http://www.thelivingpearl.com
 domain: www.thelivingpearl.com
 
-gems:
- - jekyll-paginate
 
 
 # Exclude from processing.
